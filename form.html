@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    label {
+      display: inline-block;
+      width: 100%;
+    }
+
+    form {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. <label for=""></label>
+  2. field name
+  3. hidden
+  4. Formating -->
+
+  <form action="https://fom.in.ua/echo">
+    <input type="hidden" name="form" value="form1">
+
+    <label>
+      Color
+      <input type="color" name="car_color">
+    </label>
+
+    <hr>
+
+    
+    <label for="car_color2">Color</label>
+    <input type="color" id="car_color2" name="car_color2">
+
+
+    <fieldset>
+      <legend>Тип кузова</legend>
+      <label><input type="checkbox" name="body_style" value="universal">Универсал</label>
+      <label><input type="checkbox" name="body_style" value="sedan">Седан</label>
+      <label><input type="checkbox" name="body_style" value="hetchback">Хэтчбек</label>
+    </fieldset>
+
+
+
+
+    <div>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+
+  <form action="https://fom.in.ua/echo">
+    <input type="hidden" name="affid" value="form2">
+    <div>
+      <label><input type="radio" name="gender" value="male"> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+  
+</body>
+</html>
